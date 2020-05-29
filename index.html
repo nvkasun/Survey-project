@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 id="title">Netflix Survey Form update</h1>
-    <p id="description">
-      This is a survey where you can tell us about the Tv show you're inspired
-      by
-    </p>
+    <h1 id="title" class="title">NETFLIX Survey Form</h1>
+    <em
+      ><p id="description" class="title2">
+        This is a survey where you can tell us about the Tv show you're inspired
+        by
+      </p></em
+    >
     <div id="form-area"></div>
     <form id="survey-form">
       <label for="name" id="name-label">Name:</label><br />
@@ -56,8 +58,10 @@
       <br />
 
       <label for="role">Would you recommend Netflix to a friend?</label><br />
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Definitely</label><br />
+      <input type="radio" id="male" name="gender" value="male" /><label
+        for="male"
+        >Definitely</label
+      ><br />
       <input type="radio" id="female" name="gender" value="female" />
       <label for="female">Maybe</label><br />
       <input type="radio" id="other" name="gender" value="other" />
@@ -79,19 +83,22 @@
         What would you like to see improved? (Check all that apply)</label
       ><br />
 
-      <input type="checkbox" name="vehicle1" value="Bike" />
-      <label for="vehicle1"> I have a bike</label><br />
-      <input type="checkbox" name="vehicle2" value="Car" />
-      <label for="vehicle2"> I have a car</label><br />
-      <input type="checkbox" name="vehicle3" value="Boat" checked />
-      <label for="vehicle3"> I have a boat</label><br /><br />
-      <input type="submit" value="Submit" />
-
+      <input type="checkbox" name="oc" value="oc" />
+      <label for="v1"> Original content</label><br />
+      <input type="checkbox" name="somd" value="somd" />
+      <label for="v2"> Stream on multiple devices at once</label><br />
+      <input type="checkbox" name="dc" value="dc" checked />
+      <label for="v3"> Download content</label><br />
+      <input type="checkbox" name="mp" value="mp" checked />
+      <label for="v4"> Multiple profiles</label><br />
       <br />
+      <label for="comments">Any comments or suggestions?</label>
 
-      <label for="w3review">Review of W3Schools:</label>
-      <br />
-      <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+      <div class="container">
+        <div class="comment">
+          <textarea class="textinput" placeholder="Comment"></textarea>
+        </div>
+      </div>
       <br />
 
       <input type="submit" id="submit" />
